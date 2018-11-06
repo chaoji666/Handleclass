@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.handsclass"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />  
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="com.example.handsclass.activity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.activity.StudentActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Student" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.config.MyLocationListener"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.location" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.activity.TeacherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Teacher" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.activity.AdminActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Admin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.admin.StudentManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.StudentManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.admin.TeacherManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.TeacherManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.admin.CourseManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.CourseManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.student.StudentAttendance"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.StudentAttendance" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.student.StudentClassEvaluation"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.StudentClassEvaluation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.student.StudentWorkScore"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.StudentWorkScore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.student.StudentNormalScore"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.StudentNormalScore" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.teacher.AttendanceManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AttendanceManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.teacher.EvaluationManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.EvaluationManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.teacher.ScoreManage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ScoreManage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.PersonalInfoView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.InfoView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.handsclass.PersonalInfoEdit"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.InfoEdit" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/locationtext"
+        android:gravity="center"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="当前位置:福建工程学院"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/id_viewPager1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="200dp">
+	        
+	    </android.support.v4.view.ViewPager>
+	    
+	    <LinearLayout 
+	        android:layout_gravity="center|bottom"
+	        android:layout_width="105dp"
+	        android:layout_height="20dp">
+	        
+	        <ImageView 
+	            android:id="@+id/imgbtn1"
+	            android:layout_margin="5dp"
+	            android:src="@drawable/viewpagerimg_normal"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"/>
+	        <ImageView 
+	            android:id="@+id/imgbtn2"
+	            android:layout_margin="5dp"
+	            android:src="@drawable/viewpagerimg_normal"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"/>
+	        <ImageView 
+	            android:id="@+id/imgbtn3"
+	            android:layout_margin="5dp"
+	            android:src="@drawable/viewpagerimg_normal"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"/>
+	        <ImageView 
+	            android:id="@+id/imgbtn4"
+	            android:layout_margin="5dp"
+	            android:src="@drawable/viewpagerimg_normal"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"/>
+	        
+	    </LinearLayout>
+	 </FrameLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:src="@drawable/line"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <LinearLayout 
+	        android:id="@+id/teacher_attendance_manage"
+	        android:gravity="center"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:orientation="vertical">
+	        
+	        <ImageButton
+	            android:id="@+id/student_btn1" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="false"
+	            android:src="@drawable/qin"
+	            android:background="#000000"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="出勤管理"
+	            android:textSize="10dp"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/teacher_evaluation_manage"
+            android:gravity="center"
+	        android:layout_width="0dp"
+        	android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+        
+	        <ImageButton
+	            android:id="@+id/student_btn2" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="false"
+	            android:src="@drawable/ke"
+	            android:background="#000000"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="课堂评价管理"
+	            android:textSize="10dp"/>
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/teacher_score_manage"
+            android:gravity="center"
+	        android:layout_width="0dp"
+        	android:layout_weight="1"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+        
+	        <ImageButton
+	            android:id="@+id/student_btn3" 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="false"
+	            android:src="@drawable/zuo"
+	            android:background="#000000"/>
+	        <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="作业成绩管理"
+	            android:textSize="10dp"/>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:layout_width="match_parent"
+        android:src="@drawable/line"
+        android:layout_height="wrap_content"/>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/zixun"/>  
+          
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:divider="#eee"
+        android:dividerHeight="3dp">
+    </ListView>
+    
+    </FrameLayout>
+
+</LinearLayout>

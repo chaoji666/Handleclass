@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/InfoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal" >
+
+        <com.example.handsclass.config.ImageViewPlus
+            android:id="@+id/icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/nicheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.5"
+            android:text="昵称"
+            android:textSize="25dp" />
+        
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/list_extend" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shezhi_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:divider="#ddd"
+        android:dividerHeight="3dp" >
+    </ListView>
+    
+    <RelativeLayout
+        android:id="@+id/relogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:text="注销"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:layout_gravity="right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/list_extend" />
+    </RelativeLayout>
+
+</LinearLayout>
